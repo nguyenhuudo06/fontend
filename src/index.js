@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 
 // Routes
 routes(app);
+// console.log(process.env.MONGO_DB)
 
 // Kết nối cơ sở dữ liệu MongoDB
 mongoose.connect(process.env.MONGO_DB)

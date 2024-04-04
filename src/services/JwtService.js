@@ -7,7 +7,7 @@ const generalAccessToken = async (payload) =>{
     console.log('payload', payload);
     const accessToken = jwt.sign({
         payload
-    }, process.env.ACCESS_TOKEN, { expiresIn: '30s' });
+    }, process.env.ACCESS_TOKEN, { expiresIn: '90s' });
 
     return accessToken;
 }
